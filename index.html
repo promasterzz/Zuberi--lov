@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Someone Special 💖</title>
+  <style>
+    body {
+      background-color: #fff0f5;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding-top: 80px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #d63384;
+    }
+
+    .emoji {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    .message {
+      font-size: 1.8em;
+      color: #444;
+      margin: 30px;
+    }
+
+    .buttons {
+      margin-top: 40px;
+    }
+
+    button {
+      padding: 15px 30px;
+      font-size: 1.5em;
+      margin: 20px;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .yes {
+      background-color: #ff4d88;
+      color: white;
+    }
+
+    .no {
+      background-color: #ccc;
+      color: black;
+      position: relative;
+    }
+
+    .no:hover {
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="emoji">❣️ 🥰 ❣️</div>
+  <h1>Do you love me?</h1>
+  <div class="message">
+    Zuberi Maulid Lipaki from Tanzania wants to know...<br>
+    💌 Will you be mine forever? 💘
+  </div>
+
+  <div class="buttons">
+    <button class="yes" onclick="alert('Aww 🥰 I love you too! Forever and ever! 💖')">Yes</button>
+    <button class="no" onmouseover="moveButton(this)">No</button>
+  </div>
+
+  <audio autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    function moveButton(button) {
+      const x = Math.random() * (window.innerWidth - 100);
+      const y = Math.random() * (window.innerHeight - 100);
+      button.style.left = x + 'px';
+      button.style.top = y + 'px';
+    }
+  </script>
+
+</body>
+</html>
